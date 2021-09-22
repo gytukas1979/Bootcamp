@@ -1,0 +1,222 @@
+.main {
+    position: relative;
+    width: 100%;
+    max-width: rem(1440);
+    min-height: 100vh;
+    margin: 0 auto;
+    background-image: url("../../images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-size: 42.36%;
+    background-position: left 0 bottom 0;
+    background-color: $bg;
+    @media (max-width: $lg) {
+        position: static !important;
+        background-size: 76%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-top: rem(24);
+    }
+
+    &__text {
+        position: absolute;
+        z-index: 3;
+        left: 11.46%;
+        top: 26.75%;
+        width: 44.09%;
+        max-width: rem(635);
+        background-image: url("../../images/pattern-quotes.svg");
+        background-repeat: no-repeat;
+        background-size: rem(120) rem(100);
+        background-position: top 0 left 14.96%;
+        padding-top: rem(64);
+        @media (max-width: $xl) {
+            left: 9.46%;
+            top: 21.75%;
+            background-size: rem(108) rem(90);
+            padding-top: rem(58);
+        }
+        @media (max-width: $lg) {
+            position: static !important;
+            order: 2;
+            z-index: 1;
+            margin: rem(32) auto 0;
+            width: 82.93%;
+            background-position: top 0 left 50%;
+        }
+        @media (max-width: $md) {
+            background-size: rem(60) rem(50);
+            padding-top: rem(25);
+        }
+    }
+
+    &__quote {
+        font-style: normal;
+        font-weight: 300;
+        font-size: rem(32);
+        line-height: rem(44);
+        color: $dark-blue;
+        margin-bottom: rem(32);
+        @media (max-width: $xl) {
+            font-size: rem(28);
+            line-height: rem(40);
+            margin-bottom: rem(28);
+        }
+        @media (max-width: $lg) {
+            text-align: center;
+        }
+        @media (max-width: $md) {
+            font-size: rem(18);
+            line-height: rem(24);
+            margin-bottom: rem(19);
+        }
+    }
+
+    &__person-info {
+        @media (max-width: $lg) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__person-name {
+        font-style: normal;
+        font-weight: bold;
+        font-size: rem(20);
+        line-height: rem(38);
+        color: $dark-blue;
+        margin-right: rem(10);
+        @media (max-width: $xl) {
+            font-size: rem(18);
+            line-height: rem(35);
+        }
+        @media (max-width: $lg) {
+            text-align: center;
+            margin-right: 0;
+        }
+        @media (max-width: $sm) {
+            font-size: rem(15);
+            line-height: rem(20);
+        }
+    }
+
+    &__person-position {
+        font-style: normal;
+        font-weight: 500;
+        font-size: rem(20);
+        line-height: rem(38);
+        color: $grey-blue;
+        @media (max-width: $xl) {
+            font-size: rem(18);
+            line-height: rem(35);
+        }
+        @media (max-width: $lg) {
+            text-align: center;
+        }
+        @media (max-width: $sm) {
+            font-size: rem(15);
+            line-height: rem(20);
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        width: 48.4%;
+        max-width: rem(697);
+        right: 5.07%;
+        top: 6.25%;
+        @media (max-width: $lg) {
+            max-width: rem(500);
+            position: relative;
+            order: 1;
+            width: 87.2%;
+            top: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+
+    &__bg-img {
+        display: block;
+        width: 100%;
+    }
+
+    &__picture {
+        position: absolute;
+        width: 77.47%;
+        top: 9.59%;
+        right: 13.2%;
+        @media (max-width: $lg) {
+            width: 77.67%;
+            top: 9.74%;
+            right: 10.87%;
+        }
+    }
+
+    &__person-picture {
+        display: block;
+        width: 100%;
+        box-shadow: 0px 15px 20px -10px rgba(36, 36, 113, 0.0991313);
+    }
+
+    &__buttons {
+        position: absolute;
+        display: flex;
+        top: calc(100% - 1.75rem);
+        left: 11.48%;
+        width: rem(112);
+        height: rem(56);
+        border-radius: rem(28);
+        background-color: $white;
+        box-shadow: 0px 15px 20px -10px rgba(36, 36, 113, 0.0991313);
+        @media (max-width: $lg) {
+            top: calc(100% - 1.25rem);
+            left: calc(50% - 2.5rem);
+            width: rem(80);
+            height: rem(40);
+        }
+    }
+
+    &__prev-btn {
+        width: 50%;
+        height: 100%;
+        border: none;
+        outline: none;
+        background-color: $white;
+        border-top-left-radius: rem(28);
+        border-bottom-left-radius: rem(28);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+            background-color: $light-blue;
+        }
+    }
+
+    &__next-btn {
+        width: 50%;
+        height: 100%;
+        border: none;
+        outline: none;
+        background-color: $white;
+        border-top-right-radius: rem(28);
+        border-bottom-right-radius: rem(28);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+            background-color: $light-blue;
+        }
+    }
+
+    &__btn-img {
+        width: rem(12);
+        height: rem(18);
+        @media (max-width: $lg) {
+            width: rem(8);
+            height: rem(12);
+        }
+    }
+}

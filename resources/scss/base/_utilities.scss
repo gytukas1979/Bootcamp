@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    min-width: 200px;
+}
+@keyframes move {
+    0% {
+        transform: matrix(0.01, 0, 0, 1, 0, 0);
+    }
+    100% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+}
+
+.changeUserAnimation {
+    animation: move 0.8s;
+}
