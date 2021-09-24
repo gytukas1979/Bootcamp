@@ -6,6 +6,7 @@ This is a solution to the [Coding bootcamp testimonials slider challenge on Fron
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -21,6 +22,9 @@ Users are able to:
 - View the optimal layout for the component depending on their device's screen size
 - Navigate the slider using either their mouse or keyboard (ArrowLeft and ArrowRight)
 
+### Screenshot
+
+![](resources/images/screenshot.png)
 
 ### Links
 - Live Site URL: [https://bootcamp-beige.vercel.app](https://bootcamp-beige.vercel.app)
