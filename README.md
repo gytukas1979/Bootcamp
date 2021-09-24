@@ -38,7 +38,7 @@ Users are able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/gytukas1979)
+- Frontend Mentor - [@gytukas1979](https://www.frontendmentor.io/profile/gytukas1979)
 
 
 
